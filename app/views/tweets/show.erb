@@ -1,6 +1,7 @@
 
 <h3>The tweet:</h3>
 <p><%= @tweet.content%> </p>
+@tweet.created_at
 
 <form action="/tweets/<%=@tweet.id%>/delete" method="post">
   <input type="hidden" id="hidden" name="_method" value="delete">
